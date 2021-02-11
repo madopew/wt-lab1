@@ -253,6 +253,31 @@ nav {
     margin-bottom: 1.2rem;
 }
 
+.services {
+    margin-top: 2rem;
+    flex-grow: 1;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.services h2 {
+    font-size: 3rem;
+}
+
+.services h3 span {
+    font-weight: 700;
+}
+
+.services h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
 @media (max-width: 850px) {
   .links {
     display: none;
@@ -379,6 +404,31 @@ nav {
     font-size: 1.2rem;
   }
 
+  .services {
+    margin-top: 2rem;
+    flex-grow: 1;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: auto;
+    padding-bottom: 5rem;
+}
+
+.services h2 {
+    font-size: 2rem;
+}
+
+.services h3 span {
+    font-weight: 700;
+}
+
+.services h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
 }
 
 @media (max-height: 850px) {
