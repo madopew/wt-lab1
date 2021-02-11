@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #333;
+}
+
+input:focus {
+    outline: none;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.write-me {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.write-me-icon {
+  margin-right: 2rem;
+}
+
+.write-me-icon span {
+  font-size: 2rem;
+}
+
+.write-me-email {
+  font-weight: 700;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.links-mobile {
+  display: none;
+}
+
+.links a {
+  color: #777;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-left: 1.5rem;
+}
+
+.links a:hover {
+  color: #333;
+}
+
+.info {
+  flex-grow: 1;
+  padding-top: 5rem;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  background-image: url(./res/avatar.jpeg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 2rem;
+}
+
+.info h2 {
+  font-size: 2.2rem;
+}
+
+.info h1 {
+  text-align: center;
+  font-size: 3.2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  line-height: 120%;
+}
+
+.info p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.info p span {
+  font-weight: 700;
+}
+
+.info .button {
+  margin-top: 2rem;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #111;
+  color: white;
+  text-transform: uppercase;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  height: 30px;
+  border-radius: 30px;
+}
+
+.works-presentation {
+  width: 90%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pres-elem {
+  width: 24%;
+  height: 45%;
+  border-radius: 10%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.2s ease-in-out;
+}
+
+.pres-elem:hover {
+  transform: scale(1.2);
+  transition: 0.2s ease-in-out;
+}
+
+.resume {
+  margin-top: 3rem;
+  width: 80%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.resume-block {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.resume-title {
+  text-decoration: underline;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.resume-subblock {
+  margin-bottom: 1rem;
+}
+
+.resume-place {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.resume-position {
+  font-weight: 600;
+}
+
+.resume-design {
+  width: 50vw;
+  height: 50vw;
+  position: fixed;
+  right: 5%;
+  top: 30%;
+  z-index: 0;
+  background: #31e7de28;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.contact-form {
+  flex-grow: 1;
+  padding-top: 5rem;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  background-image: url(./res/avatar.jpeg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 1rem;
+}
+
+.contact-form h1 {
+  text-align: center;
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+  line-height: 120%;
+}
+
+.contact-form input {
+    border: none;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #999;
+    padding:  0.5rem 0 0.5rem 0;
+    margin-bottom: 1.2rem;
+}
+
+@media (max-width: 850px) {
+  .links {
+    display: none;
+  }
+
+  .links-mobile {
+    background: white;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    padding-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .links-mobile a {
+    height: 100%;
+    width: 100%;
+  }
+
+  .info h2 {
+    font-size: 1.5rem;
+  }
+
+  .info h1 {
+    font-size: 2.2rem;
+  }
+
+  .info p {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    display: none;
+  }
+
+  .works-presentation {
+    width: 90%;
+    margin-top: 1rem;
+    padding-bottom: 5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow: auto;
+  }
+
+  .pres-elem {
+    width: 100%;
+    min-height: 30vh;
+    height: 30vh;
+    margin-bottom: 1rem;
+    border-radius: 10%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: none;
+  }
+
+  .pres-elem:hover {
+    transform: scale(1);
+    transition: none;
+  }
+
+  .resume-design {
+    display: none;
+  }
+
+  .resume {
+    margin-top: 1rem;
+    padding-bottom: 4rem;
+    width: 90%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    position: relative;
+    overflow: auto;
+  }
+
+  .resume-block {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .resume-title {
+    text-decoration: underline;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .resume-subblock {
+    margin-bottom: 0.5rem;
+  }
+
+  .resume-place {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .resume-position {
+    font-weight: 600;
+  }
+
+  .contact-form h1 {
+    font-size: 2.2rem;
+  }
+
+  .contact-form input {
+      width: 90%;
+    font-size: 1.2rem;
+  }
+
+}
+
+@media (max-height: 850px) {
+  * {
+    font-size: 1rem !important;
+  }
+}
